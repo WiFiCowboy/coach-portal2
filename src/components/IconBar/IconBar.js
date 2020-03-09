@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import './IconBar.css'
-// import { FaChartBar, FaNewspaper, FaExclamationTriangle, FaTasks, FaUsers, FaTruck, FaGlobeAmericas, FaLink, FaTable, FaTrophy, FaEdit, FaFontAwesome } from 'react-icons/fa'
 import icons from './IconStore'
-// import FaFontAwesomeIcon from 'react-icons/fa'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 export default class IconBar extends Component {

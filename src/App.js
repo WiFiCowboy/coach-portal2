@@ -3,6 +3,7 @@ import './App.css';
 import { Component } from 'react';
 import Nav from './components/Nav/Nav'
 import IconBar from './components/IconBar/IconBar'
+import Filters from './components/Filters/Filters'
 
 
 
@@ -13,6 +14,7 @@ export default class App extends Component {
       <div>
         <Nav />
         <IconBar />
+        <Filters />
       </div>
     );
   }

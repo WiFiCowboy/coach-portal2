@@ -1,0 +1,48 @@
+.icon-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+} 
+
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.icon-title {
+  padding: 10px;
+  font-size: 1.5vh;
+  color: rgb(71, 79, 79);
+}
+
+.fa-bar-chart, .fa-tasks, .fa-globe, .fa-edit {
+  color: #00a8e0;
+}
+
+.fa-newspaper-o {
+  color: rgb(114, 67, 67);
+}
+
+.fa-exclamation-triangle {
+  color: red;
+}
+
+.fa-users {
+  color: orangered;
+}
+
+.fa-truck, .fa-link {
+  color: rgb(116, 101, 101);
+}
+
+.fa-table {
+  color: rgb(254, 182, 1);
+}
+
+.fa-trophy {
+  color: rgb(2, 135, 55);
+}

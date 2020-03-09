@@ -25,10 +25,9 @@ img {
 .nav-icons {
   flex: 1;
   color: white;
-  font-size: 3vh;
-  padding: 5px;
+  font-size: 4vh;
   border: solid white 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   
 }
 

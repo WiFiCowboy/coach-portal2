@@ -13,6 +13,7 @@
 .btn {
   height: 100%;
   width: 100px;
+  background-color: white;
 }
 
 i.fa {
@@ -26,8 +27,10 @@ input, select, button {
 .export {
   color: #0382ac;
   border: #0382ac 1px solid;
+  
 }
 
 button.export i {
   border: none;
+  background-color: white;
 }

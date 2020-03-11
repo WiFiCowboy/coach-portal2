@@ -1,19 +1,36 @@
 import React, { Component } from 'react'
 import './EmployeeCard.css'
+import data from './data'
 
 export default class EmployeeCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = data
+  }
 
   render() {
+
     return (
-      <div className='employee-card'>
-        <div className='image'><img src="https://images.unsplash.com/photo-1521146764736-56c929d59c83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Employee Image"></img></div>
-        <div className='info-card'>
-          <div className='info-data'></div>
-          <div className='info-data'></div>
-          <div className='info-data'></div>
-          <div className='info-data'></div>
+      this.state.employee.map(item => (
+        <div className='employee-card'>
+          <div className='image'><img src={item.image}></img></div>
+          <div className='info-card'>
+            <div className='info-data emp-name'>{item.name}</div>
+            <div className='info-data contact'><i className="fa fa-phone" /> 555-555-5555</div>
+            <div className='info-data contact'><i className="fa fa-envelope" /> AA1234@att.com</div>
+            <div className='info-data tenure'>
+              <p>10 yrears 2 Months</p>
+            </div>
+          </div>
+          <div className="card-item"><h2>HPC</h2><h3>{item.hpc}</h3></div>
+          <div className="card-item"><h2>VOC</h2><h3>{item.voc}</h3></div>
+          <div className="card-item"><h2>AIQ</h2><h3>{item.aiq}</h3></div>
+          <div className="card-item"><h2>True Test</h2><h3>{item.true}</h3></div>
+          <div className="card-item"><h2>Billing</h2><h3>{item.billing}</h3></div>
+          <div className="card-item"><h2>EP</h2><h3>{item.attianment}</h3></div>
+          <div className="card-item"><h2>Attianment</h2><h3>{item.ep}</h3></div>
         </div>
-      </div>
+      ))
     )
   }
 }

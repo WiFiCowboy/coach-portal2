@@ -6,6 +6,10 @@
   height: 20vh;
 }
 
+.even {
+  background-color: lightgrey;
+}
+
 .card-item {
   width: 12.5%;
 }

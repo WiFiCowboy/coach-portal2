@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import { Component } from 'react';
 import Nav from './components/Nav/Nav'
@@ -12,12 +13,16 @@ import EmployeeCard from './components/EmployeeCard/EmployeeCard'
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Nav />
-        <IconBar />
-        <Filters />
-        <EmployeeCard />
-      </div>
+      <Router>
+        <div>
+          <Nav />
+          <IconBar />
+          <Filters />
+          <Switch>
+            <Route path="/" exact component={EmployeeCard} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 

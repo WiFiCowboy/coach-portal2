@@ -1,20 +1,40 @@
 .flag-container {
   display: flex;
   flex-direction: row;
-  background-color: lightsteelblue;
+  color: white;
+  background-color: rgb(48, 50, 52);
+  justify-content: flex-start;
+}
+
+.tech-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  
 }
 
 .fa-flag {
   font-size: 20px;
-  color: aquamarine;
+  color: rgb(2, 135, 55);
 }
+
+
 
 .flag-month {
   display: flex;
   flex-direction: row;
+  margin: auto;
+  /* padding: 5px 10px; */
+  text-align: center;
 }
 
 .flag-block {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px 15px;
+  
 }

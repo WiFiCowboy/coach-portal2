@@ -4,7 +4,6 @@ import './FlagBar.css'
 
 function FlagBar() {
 
-
   const flag = FlagData.months.map(item => {
     if (item.flagOn) {
       return (
@@ -19,6 +18,7 @@ function FlagBar() {
     return (
       <div key={item.id} className="flag-block">
         <h4> {item.month} </h4>
+        {flag}
       </div>
     )
   }
@@ -28,13 +28,13 @@ function FlagBar() {
 
   return (
     <div className="flag-container">
-      <div className="flag-container">
+      <div className="tech-type">
         <h3>HD</h3>
         <i className="fa fa-home" ></i>
       </div>
       <div className="flag-month">
         {flagDispaly}
-        {flag}
+        {/* {flag} */}
       </div>
     </div>
   )

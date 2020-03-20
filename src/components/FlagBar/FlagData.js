@@ -15,12 +15,12 @@ export default {
     {
       "id": 2,
       "month": "FEB",
-      "flagOn": true,
+      "flagOn": false,
     },
     {
       "id": 3,
       "month": "MAR",
-      "flagOn": true,
+      "flagOn": false,
     },
     {
       "id": 4,

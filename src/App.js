@@ -7,6 +7,7 @@ import IconBar from './components/IconBar/IconBar'
 import Filters from './components/Filters/Filters'
 import EmployeeCard from './components/EmployeeCard/EmployeeCard'
 import FlagBar from './components/FlagBar/FlagBar'
+import DailyView from './components/DailyView/DailyView'
 
 
 
@@ -22,6 +23,7 @@ export default class App extends Component {
             <Route path="/" exact component={EmployeeCard} />
           </Switch>
           <FlagBar />
+          <DailyView />
         </div>
       </Router>
     );

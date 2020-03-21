@@ -1,0 +1,14 @@
+.daily-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.esm-info > th , td {
+  text-align: center;
+  border: 1px solid black;  
+  padding: 0;
+}
+
+.label {
+  background-color: rgb(230, 156, 46);
+}

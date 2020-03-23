@@ -6,8 +6,9 @@ import Nav from './components/Nav/Nav'
 import IconBar from './components/IconBar/IconBar'
 import Filters from './components/Filters/Filters'
 import EmployeeCard from './components/EmployeeCard/EmployeeCard'
-import FlagBar from './components/FlagBar/FlagBar'
 import DailyView from './components/DailyView/DailyView'
+import JobView from './components/JobView/JobView'
+import LogisticView from './components/LogisticView/LogisticView'
 
 
 
@@ -21,9 +22,10 @@ export default class App extends Component {
           <Filters />
           <Switch>
             <Route path="/" exact component={EmployeeCard} />
+            <Route path="/dailyview" component={DailyView} />
+            <Route path="/jobview" component={JobView} />
+            <Route path="/logisticview" component={LogisticView} />
           </Switch>
-          <FlagBar />
-          <DailyView />
         </div>
       </Router>
     );

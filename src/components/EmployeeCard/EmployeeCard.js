@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './EmployeeCard.css'
 import data from './data'
 
@@ -12,10 +13,12 @@ export default class EmployeeCard extends Component {
 
     return (
       this.state.employee.map(item => (
-        <div className='employee-card'>
+        <div className='employee-card' key={item.id}>
           <div className='image'><img src={item.image}></img></div>
           <div className='info-card'>
-            <div className='info-data emp-name'>{item.name}</div>
+            <div className='info-data emp-name'><Link to='/dailyview'>
+              {item.name}
+            </Link></div>
             <div className='info-data contact'><i className="fa fa-phone" /> 555-555-5555</div>
             <div className='info-data contact'><i className="fa fa-envelope" /> AA1234@att.com</div>
             <div className='info-data tenure'>

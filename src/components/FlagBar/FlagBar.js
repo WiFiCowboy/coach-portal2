@@ -34,7 +34,6 @@ function FlagBar() {
       </div>
       <div className="flag-month">
         {flagDispaly}
-        {/* {flag} */}
       </div>
     </div>
   )

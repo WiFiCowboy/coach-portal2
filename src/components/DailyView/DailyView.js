@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import FlagBar from '../FlagBar/FlagBar'
 import './DailyView.css'
 
 export default class DailyView extends Component {
   render() {
     return (
       <div className="daily-container">
+        <FlagBar />
         <h2 className="label">Detail Summary</h2>
         <table className="esm-info">
           <thead>
@@ -19,7 +22,7 @@ export default class DailyView extends Component {
               <th>STATUS</th>
             </tr>
             <tr>
-              <td>W01101000</td>
+              <td><Link to='/jobview'>W01101000</Link></td>
               <td>Mar-5 08:15</td>
               <td>Mar-5 13:02</td>
               <td>IRJHAM</td>
@@ -29,7 +32,7 @@ export default class DailyView extends Component {
               <td>COMPLETE</td>
             </tr>
             <tr>
-              <td>W01101000</td>
+              <td><Link to='/jobview'>W01101000</Link></td>
               <td>Mar-5 08:15</td>
               <td>Mar-5 13:02</td>
               <td>IRJHAM</td>
@@ -39,7 +42,7 @@ export default class DailyView extends Component {
               <td>COMPLETE</td>
             </tr>
             <tr>
-              <td>W01101000</td>
+              <td><Link to='/jobview'>W01101000</Link></td>
               <td>Mar-5 08:15</td>
               <td>Mar-5 13:02</td>
               <td>IRJHAM</td>
@@ -50,7 +53,7 @@ export default class DailyView extends Component {
             </tr>
           </thead>
         </table>
-        <h2>TIME VALIDATION</h2>
+        <h3><Link to='/logisticview'>TIME VALIDATION</Link></h3>
         <table>
           <thead>
             <tr>
@@ -77,6 +80,7 @@ export default class DailyView extends Component {
             </tr>
           </thead>
         </table>
+        <button className='back-button'><Link to='/'>Back</Link></button>
       </div>
     )
   }

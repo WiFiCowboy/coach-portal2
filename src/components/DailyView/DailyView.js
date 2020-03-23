@@ -80,7 +80,7 @@ export default class DailyView extends Component {
             </tr>
           </thead>
         </table>
-        <button className='back-button'><Link to='/'>Back</Link></button>
+        <button className='back-button'><Link to='/coach-portal2'>Back</Link></button>
       </div>
     )
   }

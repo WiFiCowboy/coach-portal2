@@ -21,7 +21,7 @@ export default class App extends Component {
           <IconBar />
           <Filters />
           <Switch>
-            <Route path="/" exact component={EmployeeCard} />
+            <Route path="/coach-portal2" exact component={EmployeeCard} />
             <Route path="/dailyview" component={DailyView} />
             <Route path="/jobview" component={JobView} />
             <Route path="/logisticview" component={LogisticView} />

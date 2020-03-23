@@ -14,7 +14,7 @@ export default class EmployeeCard extends Component {
     return (
       this.state.employee.map(item => (
         <div className='employee-card' key={item.id}>
-          <div className='image'><img src={item.image}></img></div>
+          <div className='image'><img src={item.image} alt=''></img></div>
           <div className='info-card'>
             <div className='info-data emp-name'><Link to='/dailyview'>
               {item.name}

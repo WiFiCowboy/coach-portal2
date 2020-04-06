@@ -19,8 +19,8 @@ export default class EmployeeCard extends Component {
             <div className='info-data emp-name'><Link to='/dailyview'>
               {item.name}
             </Link></div>
-            <div className='info-data contact'><i className="fa fa-phone" /> 555-555-5555</div>
-            <div className='info-data contact'><i className="fa fa-envelope" /> AA1234@att.com</div>
+            {/* <div className='info-data contact'><i className="fa fa-phone" /></div>
+            <div className='info-data contact'><i className="fa fa-envelope" /></div> */}
             <div className='info-data tenure'>
               <p>10 yrears 2 Months</p>
             </div>

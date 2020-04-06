@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FlagBar from '../FlagBar/FlagBar'
 import './LogisticView.css'
 import { Link } from 'react-router-dom'
 
@@ -7,8 +6,7 @@ export default class LogisticView extends Component {
   render() {
     return (
       <div className="daily-container">
-        <FlagBar />
-        <h2 className="label">Logistic Performance</h2>
+        <h2 className="label">Logistic Summary</h2>
         <table className="esm-info">
           <thead>
             <tr>
@@ -35,7 +33,6 @@ export default class LogisticView extends Component {
             </tr>
           </thead>
         </table>
-        <button className='back-button'><Link to='/dailyview'>Back</Link></button>
       </div>
     )
   }

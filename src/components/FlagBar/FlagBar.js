@@ -4,21 +4,18 @@ import './FlagBar.css'
 
 function FlagBar() {
 
-  const flag = FlagData.months.map(item => {
-    if (item.flagOn) {
-      return (
-        <div className="flag-block">
-          <i className="fa fa-flag" ></i>
-        </div>
-      )
-    }
-  })
-
   const flagDispaly = FlagData.months.map(item => {
     return (
       <div key={item.id} className="flag-block">
         <h4> {item.month} </h4>
-        {flag}
+        {item.flagOn === true ?
+          <div className="flag-block">
+            <i className="fa fa-flag" ></i>
+          </div>
+          :
+          <div className="flag-block">
+            <i className="fa fa-flag-o" ></i>
+          </div>}
       </div>
     )
   }

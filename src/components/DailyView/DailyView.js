@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import FlagBar from '../FlagBar/FlagBar'
 import './DailyView.css'
+import LogisticView from '../LogisticView/LogisticView'
 
 export default class DailyView extends Component {
   render() {
     return (
       <div className="daily-container">
         <FlagBar />
-        <h2 className="label">Detail Summary</h2>
+        <h2 className="label">Job Summary</h2>
         <table className="esm-info">
           <thead>
             <tr>
@@ -53,7 +54,7 @@ export default class DailyView extends Component {
             </tr>
           </thead>
         </table>
-        <h3><Link to='/logisticview'>TIME VALIDATION</Link></h3>
+        <h2 className="label">TIME Summary</h2>
         <table>
           <thead>
             <tr>
@@ -80,6 +81,7 @@ export default class DailyView extends Component {
             </tr>
           </thead>
         </table>
+        <LogisticView />
         <button className='back-button'><Link to='/coach-portal2'>Back</Link></button>
       </div>
     )

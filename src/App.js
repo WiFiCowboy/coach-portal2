@@ -8,7 +8,8 @@ import Filters from './components/Filters/Filters'
 import EmployeeCard from './components/EmployeeCard/EmployeeCard'
 import DailyView from './components/DailyView/DailyView'
 import JobView from './components/JobView/JobView'
-import LogisticView from './components/LogisticView/LogisticView'
+import HpcView from './components/Hpc/HpcView'
+
 
 
 
@@ -20,11 +21,11 @@ export default class App extends Component {
           <Nav />
           <IconBar />
           <Filters />
+          <HpcView />
           <Switch>
             <Route path="/coach-portal2" exact component={EmployeeCard} />
             <Route path="/dailyview" component={DailyView} />
             <Route path="/jobview" component={JobView} />
-            <Route path="/logisticview" component={LogisticView} />
           </Switch>
         </div>
       </Router>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import FlagBar from '../FlagBar/FlagBar'
 import './ScoreCardView.css'
 
 
@@ -7,6 +8,7 @@ class ScoreCardView extends Component {
   render() {
     return (
       <div className="hpc-container">
+        <FlagBar />
         <h2 className="label">Scorecard Detail</h2>
         <table className="hpc-info">
           <thead>
@@ -55,7 +57,7 @@ class ScoreCardView extends Component {
               <td>73.53</td>
             </tr>
             <tr>
-              <th scope="row">HPC</th>
+              <th scope="row"><Link className='link' to='hpc'>HPC</Link></th>
               <td>Surreptitious</td>
               <td>3.10</td>
             </tr>

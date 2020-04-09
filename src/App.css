@@ -3,3 +3,7 @@
   max-height: 20px;
   background-color: chartreuse;
 }
+
+.link:hover{
+  color: red;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './LogisticView.css'
-import { Link } from 'react-router-dom'
+
 
 export default class LogisticView extends Component {
   render() {

@@ -5,6 +5,24 @@ import './DailyView.css'
 import LogisticView from '../LogisticView/LogisticView'
 
 export default class DailyView extends Component {
+  constructor(props) {
+    super(props);
+    this.handleMouseHover = this.handleMouseHover.bind(this);
+    this.state = {
+      isHovering: false
+    };
+  }
+
+  handleMouseHover() {
+    this.setState(this.toggleHoverState);
+  }
+
+  toggleHoverState(state) {
+    return {
+      isHovering: !state.isHovering
+    };
+  }
+
   render() {
     return (
       <div className="daily-container">
@@ -23,7 +41,7 @@ export default class DailyView extends Component {
               <th>STATUS</th>
             </tr>
             <tr>
-              <td><Link to='/jobview'>W01101000</Link></td>
+              <td><Link className='link' to='/coachform'>W01101000</Link></td>
               <td>Mar-5 08:15</td>
               <td>Mar-5 13:02</td>
               <td>IRJHAM</td>
@@ -33,7 +51,7 @@ export default class DailyView extends Component {
               <td>COMPLETE</td>
             </tr>
             <tr>
-              <td><Link to='/jobview'>W01101000</Link></td>
+              <td><Link className='link' to='/coachform'>W01101000</Link></td>
               <td>Mar-5 08:15</td>
               <td>Mar-5 13:02</td>
               <td>IRJHAM</td>
@@ -43,7 +61,7 @@ export default class DailyView extends Component {
               <td>COMPLETE</td>
             </tr>
             <tr>
-              <td><Link to='/jobview'>W01101000</Link></td>
+              <td><Link className='link' to='/coachform'>W01101000</Link></td>
               <td>Mar-5 08:15</td>
               <td>Mar-5 13:02</td>
               <td>IRJHAM</td>
@@ -82,7 +100,7 @@ export default class DailyView extends Component {
           </thead>
         </table>
         <LogisticView />
-        <button className='back-button'><Link to='/coach-portal2'>Back</Link></button>
+        <button className='back-button'><Link to='/hpc'>Back</Link></button>
       </div>
     )
   }

@@ -16,7 +16,7 @@ export default class EmployeeCard extends Component {
         <div className='employee-card' key={item.id}>
           <div className='image'><img src={item.image} alt=''></img></div>
           <div className='info-card'>
-            <div className='info-data emp-name'><Link to='/dailyview'>
+            <div className='info-data emp-name'><Link className='link' to='/scorecard'>
               {item.name}
             </Link></div>
             {/* <div className='info-data contact'><i className="fa fa-phone" /></div>

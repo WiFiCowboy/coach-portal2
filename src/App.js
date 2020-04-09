@@ -10,6 +10,7 @@ import DailyView from './components/DailyView/DailyView'
 import JobView from './components/JobView/JobView'
 import HpcView from './components/Hpc/HpcView'
 import ScoreCardView from './components/ScoreCard/ScoreCardView'
+import CoachForm from './components/CoachForm/CoachForm'
 
 
 
@@ -23,12 +24,13 @@ export default class App extends Component {
           <Nav />
           <IconBar />
           <Filters />
-          <ScoreCardView />
           <Switch>
             <Route path="/coach-portal2" exact component={EmployeeCard} />
             <Route path="/dailyview" component={DailyView} />
             <Route path="/jobview" component={JobView} />
             <Route path="/hpc" component={HpcView} />
+            <Route path="/scorecard" component={ScoreCardView} />
+            <Route path="/coachform" component={CoachForm} />
           </Switch>
         </div>
       </Router>

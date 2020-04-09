@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import { Link } from 'react-router-dom'
+import FlagBar from '../FlagBar/FlagBar'
 import './HpcView.css'
 
 
@@ -8,6 +8,7 @@ class HpcView extends Component {
   render() {
     return (
       <div className="hpc-container">
+        <FlagBar />
         <h2 className="label">HPC Detail</h2>
         <table className="hpc-info">
           <thead>
@@ -42,7 +43,7 @@ class HpcView extends Component {
           </tbody>
           <tbody>
             <tr>
-              <th rowSpan="5" scope="rowgroup">Performance</th>
+              <th rowSpan="5" scope="rowgroup"><Link className='link' to='/dailyview'>Performance</Link></th>
               <th>Efficiency</th>
               <td>103.77</td>
             </tr>
@@ -102,7 +103,7 @@ class HpcView extends Component {
             </tr>
           </tbody>
         </table>
-        <button className='back-button'><Link to='/coach-portal2'>Back</Link></button>
+        <button className='back-button'><Link to='/scorecard'>Back</Link></button>
       </div>
     )
   }

@@ -3,12 +3,28 @@ import { Link } from 'react-router-dom'
 import FlagBar from '../FlagBar/FlagBar'
 import './ScoreCardView.css'
 import data from './ScoreCardData'
+import DailyView from '../DailyView/DailyView'
 
 
 class ScoreCardView extends Component {
   constructor(props) {
     super(props);
-    this.state = { addClass: true }
+    this.state = {
+      addClass: true,
+      totalHrsWrk: true,
+      active: false,
+      notActive: false
+    }
+  }
+
+  handleTest = () => {
+    return `className="cmp"`
+  }
+
+  test = () => {
+    if (this.state.addClass) {
+      return "cmp"
+    }
   }
 
   handleClass = () => {
@@ -22,11 +38,12 @@ class ScoreCardView extends Component {
   }
 
   render() {
-
+    const isOn = this.state.active
     return (
       <div className="metric-container">
         <FlagBar />
         <h2 className="label">Employee Detail</h2>
+        <DailyView />
         <table className="key-metrics">
           <thead className="table-header">
             <tr>

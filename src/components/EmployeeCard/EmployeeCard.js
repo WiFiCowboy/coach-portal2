@@ -19,8 +19,6 @@ export default class EmployeeCard extends Component {
             <div className='info-data emp-name'><Link className='link' to='/scorecard'>
               {item.name}
             </Link></div>
-            {/* <div className='info-data contact'><i className="fa fa-phone" /></div>
-            <div className='info-data contact'><i className="fa fa-envelope" /></div> */}
             <div className='info-data tenure'>
               <p>10 yrears 2 Months</p>
             </div>
@@ -31,7 +29,7 @@ export default class EmployeeCard extends Component {
           <div className="card-item"><h2>True Test</h2><h3>{item.true}</h3></div>
           <div className="card-item"><h2>Billing</h2><h3>{item.billing}</h3></div>
           <div className="card-item"><h2>EP</h2><h3>{item.attianment}</h3></div>
-          <div className="card-item"><h2>Attianment</h2><h3>{item.ep}</h3></div>
+          <div className="card-item"><h2>Attainment</h2><h3>{item.ep}</h3></div>
         </div>
       ))
     )

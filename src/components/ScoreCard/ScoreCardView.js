@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import FlagBar from '../FlagBar/FlagBar'
 import './ScoreCardView.css'
-import data from './ScoreCardData'
+// import data from './ScoreCardData'
 import DailyView from '../DailyView/DailyView'
 
 
@@ -38,11 +38,11 @@ class ScoreCardView extends Component {
   }
 
   render() {
-    const isOn = this.state.active
+    // const isOn = this.state.active
     return (
       <div className="metric-container">
         <FlagBar />
-        <h2 className="label">Employee Detail</h2>
+        <h2 className="top-label">Employee Detail</h2>
         <DailyView />
         <table className="key-metrics">
           <thead className="table-header">
@@ -50,7 +50,7 @@ class ScoreCardView extends Component {
               <th colSpan="13">Key Metrics</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="performance" rowSpan="4" scope="rowgroup">Performance</th>
               <th scope="row">Efficiency</th>
@@ -87,9 +87,7 @@ class ScoreCardView extends Component {
               <td >Y</td>
             </tr>
           </tbody>
-          <tbody>
-          </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="dispatch" rowSpan="2" scope="rowgroup">Dispatch</th>
               <th scope="row">DE</th>
@@ -108,7 +106,7 @@ class ScoreCardView extends Component {
               <td onClick={this.handleClass} className={this.addClass()}>1</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="hpc" rowSpan="2" scope="rowgroup">HPC</th>
               <th scope="row">Completed</th>
@@ -125,7 +123,7 @@ class ScoreCardView extends Component {
               <td>-20</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="quality" rowSpan="2" scope="rowgroup">Quality</th>
               <th scope="row">AIQ</th>
@@ -153,7 +151,7 @@ class ScoreCardView extends Component {
               <th colSpan="9">KEY METRICS CATEGORY</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="performance" rowSpan="2" scope="rowgroup">Efficiency/Utilization</th>
               <th scope="row">Install 1st AVA</th>
@@ -176,7 +174,7 @@ class ScoreCardView extends Component {
               <td >n/a</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="dispatch" rowSpan="3" scope="rowgroup">DE</th>
               <th scope="row">SDCR Install</th>
@@ -203,7 +201,7 @@ class ScoreCardView extends Component {
               <td >{"Score 3.43"}</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="quality" rowSpan="3" scope="rowgroup">AIQ</th>
               <th scope="row">Install</th>
@@ -218,7 +216,7 @@ class ScoreCardView extends Component {
               <td>{"Score 84.26"}</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="voc" rowSpan="2" scope="rowgroup">{"VOC Target >=90"}</th>
               <th scope="row">Voice of the Customer</th>
@@ -229,7 +227,7 @@ class ScoreCardView extends Component {
               <td>{"Score 0"}</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="epic" rowSpan="2" scope="rowgroup">EPIC CENTER MEASURMENTS</th>
               <th scope="row">Effective Performance</th>
@@ -247,7 +245,7 @@ class ScoreCardView extends Component {
               <th colSpan="9">COMPLIANCE/COVERAGES/TRAINING/ADMINISTRATIVE</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className='stats' rowSpan="2" scope="rowgroup">Stats</th>
               <th scope="row">Billing</th>
@@ -260,7 +258,7 @@ class ScoreCardView extends Component {
               <td >90</td>
             </tr>
           </tbody>
-          <tbody>
+          <tbody className="table-body">
             <tr className="inner-header">
               <th className="admin" rowSpan="2" scope="rowgroup">Administrative</th>
               <th scope="row">Crew Meetings</th>
@@ -290,7 +288,7 @@ class ScoreCardView extends Component {
               <th colSpan="1">TECHNICIAN COVERAGE ITEMS</th>
             </tr>
           </thead>
-          <tbody className="alert">
+          <tbody className="alert" >
             <tr>
               <th scope="row">Efficiency</th>
             </tr>

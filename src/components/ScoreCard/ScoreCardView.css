@@ -12,15 +12,30 @@
 .table-header  th {
   background-color: rgb(0, 62, 84);
   color: white;
+  
 }
 
-.inner-header {
-  background-color: #07799f;
+.inner-header th{
+  border: black 2px solid;
 }
+
+.table-body::before{
+  height: 1em;
+  display: table-row;
+  content: '';
+}
+.table-body::after{
+  height: 1em;
+  display: table-row;
+  content: '';
+}
+
+
 
 .performance {
   background-color: goldenrod;
   color: black;
+  
 }
 
 .dispatch {
@@ -87,4 +102,11 @@
   background-color: rgb(230, 156, 46);
   padding: 5px;
   text-align: center;
+}
+
+.top-label{
+  background-color: rgb(230, 156, 46);
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding: 10px 0;
 }

@@ -148,7 +148,7 @@ class ScoreCardView extends Component {
         <table className="key-metrics">
           <thead className="table-header">
             <tr>
-              <th colSpan="9">KEY METRICS CATEGORY</th>
+              <th colSpan="9">KEY METRICS CATEGORY (AFO SCORECARD)</th>
             </tr>
           </thead>
           <tbody className="table-body">
@@ -281,56 +281,99 @@ class ScoreCardView extends Component {
               <td>0</td>
             </tr>
           </tbody>
-        </table>
-        <table className="key-metrics actions-table">
-          <thead className="table-header">
-            <tr>
-              <th colSpan="1">TECHNICIAN COVERAGE ITEMS</th>
-            </tr>
-          </thead>
-          <tbody className="alert" >
-            <tr>
-              <th scope="row">Efficiency</th>
+          <tbody className="table-body">
+            <tr className="inner-header">
+              <th className="vipirt" rowSpan="2" scope="rowgroup">VIPIRT</th>
+              <th scope="row">New</th>
+              <th scope="row">In Progress</th>
             </tr>
             <tr>
-              <th scope="row">DE</th>
-            </tr>
-            <tr>
-              <th scope="row">Dispatched Through Lunch</th>
-            </tr>
-            <tr>
-              <th scope="row">TRUE</th>
-            </tr>
-            <tr>
-              <th scope="row">Billing</th>
+              <td>1</td>
+              <td>1</td>
             </tr>
           </tbody>
         </table>
-        <table className="key-metrics actions-table">
-          <thead className="table-header">
-            <tr>
-              <th colSpan="2">ACTION TAKEN</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Verbal Coverage</th>
-              <td>Date:</td>
-            </tr>
-            <tr>
-              <th scope="row">Coaching</th>
-              <td>Date:</td>
-            </tr>
-            <tr>
-              <th scope="row">Other {"(Explain)"}</th>
-              <td>Date:</td>
-            </tr>
-            <tr>
-              <th scope="row">No Coverage Needed</th>
-              <td>Reason:</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="split-container">
+          <div className="bottom-left">
+            <table className="key-metrics actions-table">
+              <thead className="table-header">
+                <tr>
+                  <th colSpan="1">TECHNICIAN COVERAGE ITEMS</th>
+                </tr>
+              </thead>
+              <tbody className="alert" >
+                <tr>
+                  <th scope="row">Efficiency</th>
+                </tr>
+                <tr>
+                  <th scope="row">DE</th>
+                </tr>
+                <tr>
+                  <th scope="row">Dispatched Through Lunch</th>
+                </tr>
+                <tr>
+                  <th scope="row">TRUE</th>
+                </tr>
+                <tr>
+                  <th scope="row">Billing</th>
+                </tr>
+              </tbody>
+            </table>
+            <table className="key-metrics actions-table">
+              <thead className="table-header">
+                <tr>
+                  <th colSpan="2">ACTION TAKEN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Verbal Coverage</th>
+                  <td>Date:</td>
+                </tr>
+                <tr>
+                  <th scope="row">Coaching</th>
+                  <td>Date:</td>
+                </tr>
+                <tr>
+                  <th scope="row">Other {"(Explain)"}</th>
+                  <td>Date:</td>
+                </tr>
+                <tr>
+                  <th scope="row">No Coverage Needed</th>
+                  <td>Reason:</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bottom-right">
+            <table className="key-metrics actions-table">
+              <thead className="table-header">
+                <tr>
+                  <th colSpan="2">RECOMMENDED MANAGER ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td >Post Qualities-Installs</td>
+                  <td>I30 Rate 80%</td>
+                </tr>
+                <tr>
+                  <td >Live Quality-Repairs</td>
+                  <td>R30 Rate 77%</td>
+                </tr>
+                <tr>
+                  <td >Create Tech/Mrg Jep process</td>
+                  <td>DE Rate 68%</td>
+                </tr>
+                <tr>
+                  <th colSpan="2">Recommended manager actions are based on monthly results*</th>
+                </tr>
+              </tbody>
+            </table>
+            <button className='edpc-button'>EDPC CLICK HERE </button>
+          </div>
+        </div>
+
         <button className='back-button'><Link to='/coach-portal2'>Back</Link></button>
       </div>
     )

@@ -32,44 +32,55 @@
 
 
 
-.performance {
+/* .performance {
   background-color: goldenrod;
   color: black;
   
-}
+} */
 
-.dispatch {
+/* .dispatch {
   background-color: rgb(144, 191, 144);
   color: black;
-}
+} */
 
-.hpc {
+/* .hpc {
   background-color: rebeccapurple;
   color: black;
-}
+} */
 
-.quality {
+/* .quality {
   background-color: rgb(43, 161, 233);
   color: black;
-}
+} */
 
-.voc {
+/* .voc {
   background-color: rgb(10, 235, 160);
   color: black;
-}
+} */
 
-.epic {
+/* .epic {
   background-color: yellow;
   color: black;
-}
+} */
 
-.stats {
+/* .stats {
   background-color: wheat;
+  color: black;
+} */
+
+/* .admin {
+  background-color: darkolivegreen;
+  color: black;
+} */
+
+.vipirt, .admin , .stats, .epic, .voc, .quality, .hpc, .dispatch, .performance  {
+  background-color: rgb(15, 149, 198);
   color: black;
 }
 
-.admin {
-  background-color: darkolivegreen;
+.edpc-button {
+  background-color: rgb(97, 177, 97);
+  padding: 2px;
   color: black;
 }
 
@@ -83,6 +94,7 @@
 .actions-table  td {
   text-align: left;
   padding-left: 2px;
+  width: 100%;
 }
 
 .red {
@@ -110,3 +122,23 @@
   text-align: center;
   padding: 10px 0;
 }
+
+.split-container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.split-container > div {
+  width: 50%;
+}
+
+.bottom-left {
+  width: 100%;
+}
+.bottom-right {
+  width: 100%;
+  margin-right: 100px;
+  font-weight: 900;
+}
+
